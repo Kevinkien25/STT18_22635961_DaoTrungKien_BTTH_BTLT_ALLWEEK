@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .col-25 {
+            width: 25%;
+            float: left;
+            margin-top: 6px;
+        }
+        .col-75 {
+            width: 75%;
+            float: left;
+            margin-top: 6px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            font-size: 18px;
+        }
+
+        .form1 {
+            width: 80%;
+            height: auto;
+            background-color: rgba(0, 183, 255, 0.673);
+            margin: 10px auto;
+            font-weight: 500;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .custom-form {
+            margin-left: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h2 {
+            margin: 20px 0;
+        }
+
+        .header .text-header {
+            width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .header .text-header h1 {
+            border: 2px solid black;
+            background-color: aqua;
+            border-radius: 15px; /* Thêm góc bo tròn */
+        }
+
+        label {
+            padding: 12px 12px 12px 8;
+            display: inline-block;
+            
+        }
+
+        input[type=text], input[type=date], select, textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            font-size: 18px;
+            width: 200px; /* Đặt chiều rộng cố định */
+        }
+
+        input[type=submit] {
+            background-color: #cccccc;
+            color: black;
+            padding: 15px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 150px;
+            float: right;
+        }
+
+        hr {
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+    </style>
+    <title>Jackson Electronics - Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form1">
+            <form action="" class="custom-form">
+                <div class="header">
+                    <div class="text-header">
+                        <h1>Jackson
+                            <hr>
+                            Electronics</h1>
+                    </div>
+                    <h2>Registration Form</h2>
+                    <p>Register your Jackson Electronics product here</p>
+                </div>
+                <div class="row">
+                    <label class="col-25" for="firstName">First Name:</label>
+                    <div class="col-75">
+                        <input type="text" id="firstName">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" style="width: 180px">
+                    </div>   
+                </div>
+                <div class="row">
+                    <label class="col-25" for="address1">Address #1:</label>
+                    <div class="col-75">
+                        <input type="text" id="address1" style="width: 250px">
+                    </div>   
+                </div>
+                <div class="row">
+                    <label class="col-25" for="address2">Address #2:</label>
+                    <div class="col-75">
+                        <input type="text" id="address2" style="width: 250px">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-25" for="city">City:</label>
+                    <div class="col-75">
+                        <input type="text" id="city">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" style="width: 110px">
+                        <label for="zip">Zip:</label>
+                        <input type="text" id="zip" style="width: 150px">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-25" for="country">Country</label>
+                    <div class="col-75">
+                        <input type="text" id="country" placeholder="TP Ho Chi Minh">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="col-25" for="product">Product:</label>
+                    <div class="col-75">
+                        <select id="product">
+                            <option value="1">ScanMaster 1</option>
+                            <option value="2">ScanMaster 2</option>
+                            <option value="3">ScanMaster 3</option>
+                        </select>
+                    </div>                
+                </div>
+                <div class="row">
+                    <label class="col-25" for="datePurchased">Date Purchased:</label>
+                    <div class="col-75">
+                        <input type="date" id="datePurchased">
+                    </div>  
+                </div>
+                <div class="row">
+                    <label class="col-25" for="serial">Serial #:</label>
+                    <div class="col-75">
+                        <input type="text" id="serial">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-25" for="usedFor">Used for:</label>
+                    <div class="col-75">
+                        <input type="radio" id="home" name="usedFor">Home
+                        <input type="radio" id="edu" name="usedFor">Educational Institution
+                        <br>
+                        <input type="radio" id="business" name="usedFor">Business 
+                        <input type="radio" id="other" name="usedFor">Other
+                        <input type="radio" id="govt" name="usedFor">Government
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-25" for="system">System (check all that apply):</label>
+                    <div class="col-75">
+                        <input type="checkbox" id="windows">Windows
+                        <input type="checkbox" id="unix">UNIX
+                        <br>
+                        <input type="checkbox" id="mac">Macintosh
+                        <input type="checkbox" id="otherSys">Other
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="col-25" for="comments">Comments:</label>
+                    <div class="col-75">
+                        <textarea id="comments" cols="30" rows="10" style="width: 450px;">Writting...</textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Click to register">
+                    <input type="submit" value="Click to cancel">
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
