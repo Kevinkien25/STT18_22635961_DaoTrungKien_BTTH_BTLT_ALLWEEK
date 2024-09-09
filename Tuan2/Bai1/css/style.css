@@ -10,36 +10,6 @@
     clear: both;
 }
 
-.col-25 {
-    width: 25%;
-    float: left;
-    margin-top: 6px;
-}
-
-.col-35 {
-    width: 40%;
-    float: left;
-    margin-top: 6px;
-}
-
-.col-50 {
-    width: 50%;
-    float: left;
-    margin-top: 6px;
-}
-
-.col-75 {
-    width: 75%;
-    float: left;
-    margin-top: 6px;
-}
-
-.col-full {
-    width: 100%;
-    float: left;
-    margin-top: 6px;
-}
-
 .container {
     width: 100%;
     max-width: 1600px;
@@ -142,7 +112,7 @@
     color: red;
 }
 
-.about a2 {
+.highlighted-text {
     color: rgba(192, 11, 11, 0.733);
 }
 
@@ -210,4 +180,5 @@ input[type=button]:hover {
 
 #the-footer p {
     font-size: 18px;
+    color: white;
 }
