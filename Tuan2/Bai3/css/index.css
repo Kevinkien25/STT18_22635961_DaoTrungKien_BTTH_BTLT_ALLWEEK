@@ -19,7 +19,8 @@
     flex-direction: column;
 }
 
-.img-logo, .img-siggle {
+.img-logo,
+.img-siggle {
     height: auto;
     margin: 0 400px;
 }
