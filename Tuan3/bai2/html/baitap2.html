@@ -4,139 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bt2.css">
     <title>Document</title>
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px auto;
-        }
-        
-        .wrapper {
-            height: 600px;
-            width: 960px;
-            background-color: antiquewhite;
-        }
-        
-        header {
-            height: 150px;
-            width: 960px;
-            background-color: #294e79;
-            position: relative;
-        }
-        
-        header img {
-            top: 20px;
-            left: 10px;
-            position: absolute;
-        }
-        
-        header h2 {
-            top: 20px;
-            left: 120px;
-            position: absolute;
-            color: white;
-        }
-        
-        header h4 {
-            top: 50px;
-            left: 120px;
-            position: absolute;
-            color: white;
-        }
-        
-        header #frm {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        
-        header #frm #txtS {
-            border: 1px solid gray;
-            padding: 1px;
-        }
-        
-        header #frm #btbS {
-            border: 1px solid gray;
-            padding: 2px;
-            border-radius: 50%;
-            background-color: cadetblue;
-        }
-        
-        nav {
-            position: absolute;
-            bottom: 3px;
-            right: 20px;
-            line-height: 50px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        
-        .menu li {
-            display: inline-block;
-            background-color: gray;
-            height: 50px;
-            line-height: 50px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        
-        .menu li:hover {
-            background-color: #e673c3;
-        }
-        
-        .menu li a {
-            color: white;
-            font-weight: bolder;
-            text-decoration: none;
-        }
-        
-        .menu li .sub-menu {
-            display: none;
-            background-color: #576c85;
-            height: 50px;
-            line-height: 50px;
-            width: 155px;
-            position: absolute;
-        }
-        
-        .menu li:hover .sub-menu {
-            display: block;
-            left: 0px;
-            top: 51px;
-        }
-        
-        .menu li:nth-child(4) {
-            position: relative;
-        }
-        
-        .menu li .sub-menu li:nth-child(1) {
-            position: absolute;
-            top: 2px;
-            left: 0px;
-            width: 115px;
-        }
-        
-        .menu li .sub-menu li:nth-child(2) {
-            position: absolute;
-            top: 54px;
-            left: 0px;
-            width: 115px;
-        }
-        
-        .menu li .sub-menu li:nth-child(3) {
-            position: absolute;
-            top: 106px;
-            left: 0px;
-            width: 115px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <img src="../img/flower.png" alt="" srcset="" height="100" width="80">
-            <h2>FlowerBox 360</h2>
+            <h1>FlowerBox 360</h1>
             <h4>.. to get your daily close of luxury roes!</h4>
             <form action="" method="post" id="frm">
                 <input type="text" name="txtS" id="txtS" placeholder="Nhap" required>
@@ -158,8 +34,73 @@
                 </ul>
             </nav>
         </header>
-        <div class="content"></div>
-        <footer></footer>
+        <div class="discount-section">
+            <h3>Discounts & Specials</h3>
+            <img src="../img/rose.png" alt="Flower Discount">
+            <p>
+                FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promotions and other savings. We also offer military flower discounts to our wonderful troops!
+            </p>
+            <a href="#" class="read-more">Read More »</a>
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <h3>Why Not Contact Us Today!</h3>
+            <br>
+            <div class="contact-section">
+                <p>
+                    For FlowerBox 360 shoppers, that means not only can you, your friends, and loved ones enjoy the highest quality roses found online, but that you can do so at a great value.
+                </p>
+                <br>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="f1">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="f2">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="f1">
+                                <label for="telephone">Telephone:</label>
+                                <input type="tel" id="telephone" name="telephone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="f2">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                    </div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="33"></textarea><br>
+                    <input type="submit" value="Submit">
+                    <input type="submit" value="Reset">
+                </form>
+            </div>
+            <div class="info-section">
+                <h3>FlowerBox 360 Info!</h3>
+                <br>
+                <div class="info-section-text">
+                    <p>Operating Hours:<br> Monday-Friday: 9.00am-5.00pm<br> Saturday: 9.00am-1.00pm<br> Sunday: Closed (No Deliveries)</p>
+                    <p>Order Online 24/7</p>
+                    <br> Software Engineering Dept.<br> Information Technology Faculty<br> First Floor, H Building<br><br> 12 Nguyen Van Bao St., Ward 4<br> Go Vap District<br> Ho Chi Minh City<br> Tel: 0283.9940.990<br> Fax: 0283.9940.954
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>Copyright © 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City</p>
+        </footer>
     </div>
 </body>
 
