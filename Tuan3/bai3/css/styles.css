@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    background-color: #8B4513;
+    padding: 20px;
+    color: rgba(123, 202, 5, 0.612);
+    text-align: left;
+}
+
+header .logo h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -6px -5px 8px white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    background-color: #f5f5f5;
+}
+
+nav ul li {
+    margin: 0 17px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.vien {
+    background-image: url(../img/line.png);
+    height: 130px;
+    background-position: bottom;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section {
+    border-right: 2px solid #ccc;
+}
+
+.signup-p-form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.signup-form {
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+.signup-form h2 {
+    font-size: 1.8em;
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+.signup-form p {
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 1px solid black;
+}
+
+.signup-form form button {
+    width: 25%;
+    padding: 5px;
+    margin-top: 10%;
+    margin-right: 75%;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.signup-form form button:hover {
+    background-color: #A0522D;
+}
+
+aside {
+    margin-top: 20px;
+    width: 30%;
+}
+
+aside .links {
+    background-color: #ffd2bc;
+    border-radius: 20px 20px 0px 0px;
+}
+
+aside .links,
+aside .more-info {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+aside .links h3,
+aside .more-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+aside .links ul {
+    margin-left: 40px;
+    list-style: square;
+}
+
+aside .links ul li a {
+    text-decoration: none;
+    color: #8B4513;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 10px;
+    float: left;
+}
+
+.info-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: justify;
+    /* Căn đều văn bản */
+    display: inline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    background-image: url(../img/corner1.png), url(../img/corner2.png), url(../img/footer.png), url(../img/corner3.png), url(../img/corner4.png);
+    background-position: left top, left bottom, center top, right top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 50px, 50px, 350px, 50px, 50px;
+}

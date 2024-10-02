@@ -74,10 +74,11 @@ nav a {
     width: 40%;
 }
 
-.button {
-    float: left;
+.form-container .button {
     width: 46%;
-    margin-left: 54%;
+    margin-left: 56%;
+    background-color: #66b3ff;
+    text-align: left;
 }
 
 .form-container input[type="submit"],
@@ -85,6 +86,7 @@ nav a {
     padding: 0px 10px;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px dashed black;
     margin-bottom: 30px;
 }
 
